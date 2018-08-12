@@ -1,3 +1,16 @@
-<p>
-  recipe-item works!
-</p>
+<a href="#" (click)="onRecipeSelected(recipe)" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img [src]="recipe.imagePath" alt="" class="img-thumbnail">
+                </div>
+                <div class="col-sm">
+                    <h4 class="mb-1">{{recipe.name}}</h4>
+                    <p class="mb-1">{{recipe.description}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</a>

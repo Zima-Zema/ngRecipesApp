@@ -3,12 +3,12 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <img src="" class="img-fluid" style="max-width: 100%; height: auto;" alt="">
+          <img [src]="recipeElement?.imagePath" class="img-fluid" style="max-width: 100%; height: auto;" alt="">
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <h1>Name</h1>
+          <h1>{{recipeElement?.name}}</h1>
         </div>
       </div>
       <div class="row">
@@ -29,6 +29,7 @@
         <div class="row">
             <div class="col-xs-12">
               <p>Description</p>
+              {{recipeElement?.description}}
             </div>
           </div>
           
